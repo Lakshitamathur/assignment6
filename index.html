@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <!-- Required bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- personal CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+         <h1> Let's Calculate... </h1>
+        <table class="table cal " border="3">
+            <thead>
+                <tr>
+                    <td scope="col"><input type="button" value="C" onclick="clr()"></td>
+                    <th scope="col" colspan="3"><input id="edu"></th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <!-- creating buttons and assigning values-->
+                    <td><input type="button" value="+" onclick="dis('+')" /> </td>
+                    <td><input type="button" value="1" onclick="dis('1')" /> </td>
+                    <td><input type="button" value="2" onclick="dis('2')" /> </td>
+                    <td><input type="button" value="3" onclick="dis('3')" /> </td>
+
+                </tr>
+                <tr>
+                    <td><input type="button" value="-" onclick="dis('-')" /> </td>
+                    <td><input type="button" value="4" onclick="dis('4')" /> </td>
+                    <td><input type="button" value="5" onclick="dis('5')" /> </td>
+                    <td><input type="button" value="6" onclick="dis('6')" /> </td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="*" onclick="dis('*')" /> </td>
+                    <td><input type="button" value="7" onclick="dis('7')" /> </td>
+                    <td><input type="button" value="8" onclick="dis('8')" /> </td>
+                    <td><input type="button" value="9" onclick="dis('9')" /> </td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="/" onclick="dis('/')" /> </td>
+                    <td><input type="button" value="." onclick="dis('.')" /> </td>
+                    <td><input type="button" value="0" onclick="dis('0')" /> </td>
+                    <!-- Evaluating function call eval()-->
+                    <td><input type="button" value="=" onclick="solve()" /> </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+<script src="index.js"></script>
+
+</html>
